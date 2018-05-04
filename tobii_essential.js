@@ -66,5 +66,11 @@ class Tobii {
             }
         }
     }
+    
+    static execFollowUp(followUp){
+        if(typeof followUp === "function"){
+            followUp();
+        }
+    }
 }
 
