@@ -42,7 +42,7 @@ class Tobii {
         // Extract column names
         let keys = Object.keys(list[0]);
         // If header is not defined, use keys
-        if(keys===undefined){
+        if(header===undefined){
             header = keys;
         }
         // Create header
