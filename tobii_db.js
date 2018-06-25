@@ -137,6 +137,19 @@ class Tobii_db{
         }
     }
 
+    getTables(followUp){
+
+    }
+
+    query_get_tables(tables){
+        let sqls = [];
+        for(let ii = 0;ii<tables.length;ii++){
+            sqls.push("SELECT * FROM "+tables[ii]);
+        }
+        return sqls;
+    }
+
+
     /**
      * Static Functions
      */
